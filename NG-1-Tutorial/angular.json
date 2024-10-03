@@ -60,11 +60,13 @@
               "extractLicenses": false,
               "sourceMap": true
             }
-          },
-          "defaultConfiguration": "production"
+          }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "NG-1-Tutorial:build"
+          },
           "configurations": {
             "production": {
               "buildTarget": "NG-1-Tutorial:build:production"
@@ -72,8 +74,7 @@
             "development": {
               "buildTarget": "NG-1-Tutorial:build:development"
             }
-          },
-          "defaultConfiguration": "development"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
